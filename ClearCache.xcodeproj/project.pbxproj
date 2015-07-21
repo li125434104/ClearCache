@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10D47D11B5CD03E0056A776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10D47D01B5CD03E0056A776 /* UIKit.framework */; };
+		A10D47D41B5CD06C0056A776 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = A10D47D31B5CD06C0056A776 /* Global.m */; };
 		A1E1A68C1B58DC7E00B80915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E1A68B1B58DC7E00B80915 /* main.m */; };
 		A1E1A68F1B58DC7E00B80915 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E1A68E1B58DC7E00B80915 /* AppDelegate.m */; };
 		A1E1A6921B58DC7E00B80915 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E1A6911B58DC7E00B80915 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A10D47D01B5CD03E0056A776 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A10D47D21B5CD06C0056A776 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		A10D47D31B5CD06C0056A776 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
+		A11412E71B58F91000C62945 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A1E1A6861B58DC7E00B80915 /* ClearCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E1A68A1B58DC7E00B80915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1E1A68B1B58DC7E00B80915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10D47D11B5CD03E0056A776 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,7 @@
 		A1E1A67D1B58DC7E00B80915 = {
 			isa = PBXGroup;
 			children = (
+				A10D47D01B5CD03E0056A776 /* UIKit.framework */,
 				A1E1A6881B58DC7E00B80915 /* ClearCache */,
 				A1E1A6A21B58DC7E00B80915 /* ClearCacheTests */,
 				A1E1A6871B58DC7E00B80915 /* Products */,
@@ -85,6 +93,8 @@
 				A1E1A68E1B58DC7E00B80915 /* AppDelegate.m */,
 				A1E1A6901B58DC7E00B80915 /* ViewController.h */,
 				A1E1A6911B58DC7E00B80915 /* ViewController.m */,
+				A10D47D21B5CD06C0056A776 /* Global.h */,
+				A10D47D31B5CD06C0056A776 /* Global.m */,
 				A1E1A6931B58DC7E00B80915 /* Main.storyboard */,
 				A1E1A6961B58DC7E00B80915 /* Images.xcassets */,
 				A1E1A6981B58DC7E00B80915 /* LaunchScreen.xib */,
@@ -98,6 +108,7 @@
 			children = (
 				A1E1A68A1B58DC7E00B80915 /* Info.plist */,
 				A1E1A68B1B58DC7E00B80915 /* main.m */,
+				A11412E71B58F91000C62945 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10D47D41B5CD06C0056A776 /* Global.m in Sources */,
 				A1E1A6921B58DC7E00B80915 /* ViewController.m in Sources */,
 				A1E1A68F1B58DC7E00B80915 /* AppDelegate.m in Sources */,
 				A1E1A68C1B58DC7E00B80915 /* main.m in Sources */,
@@ -299,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -347,9 +359,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ClearCache/PrefixHeader.pch;
 				INFOPLIST_FILE = ClearCache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -357,9 +373,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ClearCache/PrefixHeader.pch;
 				INFOPLIST_FILE = ClearCache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -416,6 +436,7 @@
 				A1E1A6AB1B58DC7E00B80915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1E1A6AC1B58DC7E00B80915 /* Build configuration list for PBXNativeTarget "ClearCacheTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				A1E1A6AE1B58DC7E00B80915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
